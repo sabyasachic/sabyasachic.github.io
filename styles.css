@@ -25,3 +25,19 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.photo img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.intro {
+    flex: 1;
+}
