@@ -73,3 +73,28 @@ hr {
     border-top: 1px solid #ddd;
     margin: 40px 0;
 }
+
+.quicklinks {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.quicklinks a {
+    text-decoration: none;
+    color: #003399;
+}
+
+.quicklinks a:hover {
+    text-decoration: underline;
+}
+
+.figure-placeholder {
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    padding: 60px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    border-radius: 8px;
+    margin-top: 20px;
+}
