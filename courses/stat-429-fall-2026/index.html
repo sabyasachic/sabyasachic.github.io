@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Introduction to Time Series Analysis | STAT 429 | UIUC | Fall 2026</title>
@@ -32,182 +32,111 @@ https://sabyasachic.github.io/courses/stat-429-fall-2026/
 <a href="Time_Series_Course.pdf">Course Syllabus</a>
 </p>
 
-
-<h2>Course Description</h2>
-
-<p>
-This course provides an introduction to the analysis of time series
-and other forms of sequential data. The course begins with regression
-methods for modeling trends and relationships over time and then
-develops methods specifically designed for dependent observations.
-Topics include multiple linear regression, nonlinear regression,
-regularized high-dimensional regression, variance modeling,
-spectral analysis, lagged regression, ARIMA models, and recurrent
-neural networks.
-</p>
-
-<p>
-The emphasis throughout the course will be on understanding statistical
-models, fitting them to real datasets, quantifying uncertainty, and
-using them for prediction and forecasting.
-</p>
-
-
-<h2>Prerequisites</h2>
-
-<p>
-STAT 411 or equivalent background in probability and mathematical
-statistics is required. Prior exposure to regression, such as
-STAT 425, is strongly recommended.
-</p>
-
-
-<h2>Programming</h2>
-
-<p>
-Students may use R, Python, Julia, MATLAB, or another suitable
-programming language for homework assignments and projects.
-Classroom demonstrations will primarily use Python.
-</p>
-
-
 <h2>Schedule and Course Materials</h2>
 
 <table border="1" cellpadding="8">
 
 <tr>
-    <th>Week</th>
-    <th>Topics</th>
-    <th>Slides</th>
-    <th>Lecture Notes</th>
-    <th>Reading</th>
-    <th>Problem Set</th>
-    <th>Code and Data</th>
+<th>Week</th>
+<th>Topics</th>
+<th>Slides</th>
+<th>Lecture Notes</th>
+<th>Reading</th>
+<th>Problem Set</th>
+<th>Code and Data</th>
 </tr>
 
-
 <tr>
-    <td>1</td>
+<td>1</td>
 
-    <td>
-        Course Overview<br>
-        Introduction to Time Series Analysis<br>
-        CPI Example
-    </td>
+<td>
+Course Overview<br>
+Introduction to Time Series<br>
+CPI Example
+</td>
 
-    <td>
-        <a href="LectureOneSlides3.pdf">
-            Lecture One: Course Preview
-        </a>
-    </td>
+<td>
+<a href="LectureOneSlides3.pdf">
+Introduction to Time Series
+</a>
+</td>
 
-    <td>TBA</td>
+<td>TBA</td>
+<td>TBA</td>
+<td>TBA</td>
 
-    <td>TBA</td>
-
-    <td>TBA</td>
-
-    <td>
-        <b>Jupyter Notebook</b><br>
-        <a href="Code_Lec2.ipynb">CPI Example</a>
-
-        <br><br>
-
-        <b>Dataset</b><br>
-        <a href="CPIAUCSL_01September2025.csv">
-            CPI Data
-        </a>
-    </td>
+<td>
+<a href="Code_Lec2.ipynb">CPI Example</a><br>
+<a href="CPIAUCSL_01September2025.csv">CPI Dataset</a>
+</td>
 </tr>
 
+<tr>
+<td>2</td>
+
+<td>
+Linear Regression<br>
+Frequentist and Bayesian Inference
+</td>
+
+<td>TBA</td>
+
+<td>
+<a href="Linear%20Regression.pdf">
+Linear Regression
+</a>
+</td>
+
+<td>TBA</td>
+
+<td>
+<a href="HW1.pdf">Homework 1</a>
+</td>
+
+<td>
+<a href="Trends_Linreg.ipynb">
+Trends and Linear Regression
+</a><br>
+<a href="linreg_uncert.ipynb">
+Uncertainty in Linear Regression
+</a><br>
+<a href="std_errors_linreg.ipynb">
+Standard Errors in Linear Regression
+</a>
+</td>
+</tr>
 
 <tr>
-    <td>2</td>
+<td>3</td>
 
-    <td>
-        Linear Regression<br>
-        Frequentist Inference<br>
-        Bayesian Inference
-    </td>
+<td>
+Nonlinear Regression Models<br>
+Change of Slope Model<br>
+Introduction to the Sinusoidal Model
+</td>
 
-    <td>TBA</td>
+<td>TBA</td>
 
-    <td>
-        <a href="Linear%20Regression.pdf">
-            Linear Regression
-        </a>
-    </td>
+<td>
+<a href="Week3_Nonlinear_Regression.pdf">
+Nonlinear Regression: Change of Slope and Sinusoidal Models
+</a>
+</td>
 
-    <td>TBA</td>
+<td>TBA</td>
+<td>TBA</td>
 
-    <td>
-        <a href="HW1.pdf">Homework 1</a>
-    </td>
-
-    <td>TBA</td>
+<td>
+<a href="twostlines.ipynb">
+Change of Slope Model
+</a><br>
+<a href="sunspots.ipynb">
+Sunspots and the Sinusoidal Model
+</a>
+</td>
 </tr>
 
 </table>
-
-
-<h2>Assessment</h2>
-
-<p>
-There will be five homework assignments, one midterm examination,
-and a final examination.
-</p>
-
-<p>
-The final course grade will be calculated using whichever of the
-following two schemes gives the student the higher score:
-</p>
-
-<ul>
-    <li>
-        Homework: 30%,
-        Midterm: 30%,
-        Final Exam: 40%
-    </li>
-
-    <li>
-        Homework: 30%,
-        Final Exam: 70%
-    </li>
-</ul>
-
-<p>
-The midterm is tentatively scheduled for the ninth week of the
-course, around October 21, 2026.
-</p>
-
-
-<h2>References</h2>
-
-<p>
-There is no required textbook for the course. Lecture notes,
-slides, code, and datasets will be posted on this website.
-</p>
-
-<p>
-Useful references include:
-</p>
-
-<ul>
-    <li>
-        Berkeley STAT 153 course materials on time series analysis.
-    </li>
-
-    <li>
-        Berkeley STAT 248 course materials on advanced time series
-        and statistical modeling.
-    </li>
-
-    <li>
-        Robert H. Shumway and David S. Stoffer,
-        <i>Time Series Analysis and Its Applications</i>.
-    </li>
-</ul>
-
 
 </body>
 </html>
