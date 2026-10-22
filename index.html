@@ -1,121 +1,216 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabyasachi Chatterjee</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Introduction to Time Series Analysis | STAT 429 | UIUC | Fall 2026</title>
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body>
 
-<div class="hero">
-
-    <div class="photo">
-        <img src="profile.jpg" alt="Sabyasachi Chatterjee">
-    </div>
-
-    <div class="intro">
-
-        <h1>Sabyasachi Chatterjee</h1>
-
-        <p class="position">
-            Associate Professor of Statistics<br>
-            University of Illinois Urbana-Champaign
-        </p>
-
-        <p class="quicklinks">
-            <a href="mailto:sc1706@illinois.edu">Email</a> |
-            <a href="https://scholar.google.com/citations?user=SyVmzFsAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> |
-            <a href="https://arxiv.org/search/?query=Sabyasachi+Chatterjee&searchtype=author" target="_blank">arXiv</a> |
-            <a href="CV.pdf" target="_blank">CV</a>
-        </p>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="students.html">Students</a>
-            <a href="talks.html">Talks</a>
-        </nav>
-
-    </div>
-
-</div>
-
-<hr>
-
-<section>
-
-<h2>About Me</h2>
+<h1>STAT 429: Introduction to Time Series Analysis</h1>
 
 <p>
-I received my Ph.D. in Statistics from Yale University, where my dissertation
-advisor was Professor Andrew Barron. I then joined the University of Chicago
-as a Kruskal Instructor, where I was fortunate to be mentored by Professor
-John Lafferty.
+<b>University of Illinois Urbana-Champaign</b><br>
+Fall 2026<br>
+Instructor: Sabyasachi Chatterjee
 </p>
 
 <p>
-I am broadly interested in machine learning, statistics, probability, and
-related areas. Much of my research has been on the mathematics of curve
-fitting, technically known as nonparametric estimation. A recurring theme in
-my work is globally and locally adaptive estimation: recovering structured
-signals from noisy data using methods such as total variation denoising, trend
-filtering, isotonic regression, quantile regression, and other shape-constrained
-methods.
+<b>Lecture Hours:</b> TBA<br>
+<b>Office Hours:</b> TBA
 </p>
 
-</section>
+<p>
+Course Website:
+<a href="https://sabyasachic.github.io/courses/stat-429-fall-2026/">
+https://sabyasachic.github.io/courses/stat-429-fall-2026/
+</a>
+</p>
 
-<hr>
+<p>
+<a href="Time_Series_Course.pdf">Course Syllabus</a> |
+<a href="homeworks.html">Homeworks</a>
+</p>
 
-<section>
+<h2>Schedule and Course Materials</h2>
 
+<table border="1" cellpadding="8">
 
-<h2>Current Courses</h2>
+<tr>
+<th>Week</th>
+<th>Topics</th>
+<th>Slides</th>
+<th>Lecture Notes</th>
+<th>Reading</th>
+<th>Code and Data</th>
+</tr>
 
-<ul>
+<!-- WEEK 1 -->
 
-    <li>
-        <a href="courses/stat-542-fall-2026/">
-            STAT 542: Statistical Learning, Fall 2026
-        </a>
-    </li>
+<tr>
+<td>1</td>
+<td>
+Course Overview<br>
+Introduction to Time Series<br>
+CPI Example
+</td>
+<td>
+<a href="LectureOneSlides3.pdf">Introduction to Time Series</a>
+</td>
+<td>TBA</td>
+<td>TBA</td>
+<td>
+<a href="Code_Lec2.ipynb" download>Download CPI Example Notebook</a><br>
+<a href="CPIAUCSL_01September2025.csv">CPI Dataset</a>
+</td>
+</tr>
 
-    <li>
-        <a href="courses/stat-429-fall-2026/">
-            STAT 429: Introduction to Time Series Analysis, Fall 2026
-        </a>
-    </li>
+<!-- WEEK 2 -->
 
-    <li>
-        <a href="courses/iimb-ml-2026/">
-            Machine Learning, IIM Bangalore, Summer 2026
-        </a>
-    </li>
+<tr>
+<td>2</td>
+<td>
+Linear Regression<br>
+Frequentist and Bayesian Inference
+</td>
+<td>TBA</td>
+<td>
+<a href="Linear%20Regression.pdf">Linear Regression</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="Trends_Linreg.ipynb" download>Download Trends and Linear Regression Notebook</a><br>
+<a href="linreg_uncert.ipynb" download>Download Uncertainty in Linear Regression Notebook</a><br>
+<a href="std_errors_linreg.ipynb" download>Download Standard Errors in Linear Regression Notebook</a>
+</td>
+</tr>
 
-</ul>
-</section>
+<!-- WEEK 3 -->
 
-<hr>
+<tr>
+<td>3</td>
+<td>
+Nonlinear Regression Models<br>
+Change of Slope Model<br>
+Introduction to the Sinusoidal Model
+</td>
+<td>TBA</td>
+<td>
+<a href="Week3_Nonlinear_Regression.pdf">
+Nonlinear Regression: Change of Slope and Sinusoidal Models
+</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="twostlines.ipynb" download>Download Change of Slope Notebook</a><br>
+<a href="sunspots.ipynb" download>Download Sunspots and Sinusoidal Model Notebook</a>
+</td>
+</tr>
 
-<section>
+<!-- WEEK 4 -->
 
-<h2>Research Highlights</h2>
+<tr>
+<td>4</td>
+<td>
+Periodogram<br>
+Discrete Fourier Transform
+</td>
+<td>TBA</td>
+<td>
+<a href="Week4_Nonlinear_Regression.pdf">
+Periodogram and Discrete Fourier Transform
+</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="Inference_Sinusoidal.ipynb" download>Download Inference for Sinusoidal Model Notebook</a><br>
+<a href="DFT_Periodogram.ipynb" download>Download DFT and Periodogram Notebook</a><br>
+<a href="Hear%20Piano%20Note%20-%20Middle%20C.mp3">Piano Note: Middle C</a>
+</td>
+</tr>
 
-<ul>
-    <li>Nonparametric estimation and curve fitting</li>
-    <li>Total variation denoising and trend filtering</li>
-    <li>Shape-constrained and locally adaptive inference</li>
-    <li>Quantile and distributional regression</li>
-    <li>Probability, learning theory, and online prediction</li>
-</ul>
+<!-- WEEK 5 -->
 
-</section>
+<tr>
+<td>5</td>
+<td>
+Multiple Frequencies in Sinusoidal Models<br>
+High-Dimensional Change of Slope Model<br>
+Ridge Regularization<br>
+LASSO Regularization
+</td>
+<td>TBA</td>
+<td>
+<a href="Week5_Notes.pdf">Week 5 Notes</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="More_Sunspots.ipynb" download>Download Multiple Frequencies Notebook</a><br>
+<a href="ChangeofSlope.ipynb" download>Download Change of Slope, Ridge, and LASSO Notebook</a>
+</td>
+</tr>
+
+<!-- WEEK 6 -->
+
+<tr>
+<td>6</td>
+<td>
+Bayesian Ridge Regression<br>
+Bayesian Inference for Change of Slope Models
+</td>
+<td>TBA</td>
+<td>
+<a href="Week6.pdf">Week 6 Notes</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="Bayesian_Ridge.ipynb" download>Download Bayesian Ridge Notebook</a><br>
+<a href="Bayesian_Ridge_Kink.ipynb" download>Download Bayesian Ridge and Change of Slope Notebook</a>
+</td>
+</tr>
+
+<!-- WEEK 7 -->
+
+<tr>
+<td>7</td>
+<td>
+High-Dimensional Variance Models<br>
+Spectrum Model
+</td>
+<td>TBA</td>
+<td>
+<a href="Week7.pdf">Week 7 Notes</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="3variance.ipynb" download>Download High-Dimensional Variance Models Notebook</a><br>
+<a href="spectrum.ipynb" download>Download Spectrum Model Notebook</a>
+</td>
+</tr>
+
+<!-- WEEK 8 -->
+
+<tr>
+<td>8</td>
+<td>
+Spectrum Model Recap<br>
+Autoregressive Models: Definition and History
+</td>
+<td>TBA</td>
+<td>
+<a href="Week8.pdf">Week 8 Notes</a>
+</td>
+<td>TBA</td>
+<td>
+<a href="AR%2BYULE.ipynb" download>Download Autoregression and Yule-Walker Notebook</a><br>
+<a href="Sunspots_AR_prediction.ipynb" download>Download Sunspots AR Prediction Notebook</a>
+</td>
+</tr>
+
+</table>
 
 </body>
-
 </html>
